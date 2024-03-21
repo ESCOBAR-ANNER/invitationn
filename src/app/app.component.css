@@ -1,10 +1,33 @@
-
-
 .imgPortada {
   width: 100%;
   padding: 2px;
 }
 
-.title{
-  text-align: center;; 
+.timer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.left-content,
+.right-content {
+  width: 50%; /* Ajusta el ancho según necesites */
+  align-items: center;
+  text-align: center;
+}
+
+/* Media Query para dispositivos con un ancho máximo de 767px (pantallas móviles) */
+@media (max-width: 767px) {
+  .timer {
+    flex-direction: column; /* Cambia la dirección a columna en dispositivos móviles */
+  }
+
+  .left-content,
+  .right-content {
+    width: 100%; /* Ambos divs ocuparán el 100% del ancho en dispositivos móviles */
+  }
+}
+
+/*fuentes*/
+.loved-by the king-regular {
+  font-family: "Loved by the King", cursive;
 }

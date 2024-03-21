@@ -2,14 +2,19 @@
     <img class="imgPortada" src="../assets/portada.jpg" n alt="Portada">
 </div>
 
-<audio controls style="display: flex; margin: auto;">
+<audio controls style="display: flex; margin: auto; opacity: 2%;" [volume]="0.05" autoplay>
     <source src="../assets/song.mp3" type="audio/mpeg">
     Tu navegador no admite la reproduccion de audio.
 </audio>
 
 
-<div class="title">
-    <h1>Nuestra Boda</h1>
-    <h2>*27 de Junio de 2024*</h2>
-    <app-temporizador></app-temporizador>
+<div class="timer">
+    <div class="left-content" style="padding-top: 5%;">
+        <h1>Nuestra Boda</h1>
+        <app-temporizador></app-temporizador>
+    </div>
+
+    <div class="right-content">
+        <app-galeria></app-galeria>
+    </div>
 </div>

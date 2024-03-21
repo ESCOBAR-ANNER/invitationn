@@ -1,11 +1,14 @@
-.faltante {
-  margin: auto;
+.temporizador{
+  background-color: antiquewhite;
+  height: 125px;
+  padding: 3px 10px 10px;
+  width: 40%;
   border-top-left-radius: 2%;
   border-top-right-radius: 2%;
-  height: 100px;
-  padding: 10px;
-  background-color: antiquewhite;
-  width: 40%;
+  margin: auto;
+}
+
+.faltante {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -28,13 +31,16 @@
 
 /* Estilos para dispositivos móviles */
 @media (max-width: 768px) {
-  .faltante {
+  .temporizador {
     width: 80%; /* Cambiar el ancho al 100% en dispositivos móviles */
     border-radius: 0; /* Eliminar las esquinas redondeadas */
-    height: 100px; /* Permitir que la altura se ajuste automáticamente */
+    height: 125px; /* Permitir que la altura se ajuste automáticamente */
+    padding-bottom: 10px;
   }
 
   .countdown-item {
     flex: 1; /* Alinear los elementos horizontalmente en dispositivos móviles */
   }
 }
+
+
